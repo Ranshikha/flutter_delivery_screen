@@ -14,50 +14,64 @@ class CustomerDetails extends StatelessWidget {
         },
         color: Colors.black87
         ),
-       title: Text("Order ID : 1234568",
-          style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: Colors.black87),),
+       title: Text("Order ID:1234568",
+          style: TextStyle(fontSize: 19,fontWeight: FontWeight.w500,color: Colors.black87),),
         backgroundColor: Colors.white,
         actions: <Widget>[
-           Container(
-            width: 100,
-            height: 25,
-            child: RaisedButton(
+          Center(
+            child: Container(
 
-             child: Text('Support',
-             style: TextStyle(color: Colors.white,fontSize: 18),),
-             color: Colors.deepOrangeAccent,
-             onPressed: (){})
+                width: 100,
+                height: 40,
+                child: RaisedButton(
+
+                  child: Text('SUPPORT',
+                      style: TextStyle(color: Colors.white,fontSize: 14),),
+                   // color: Colors.orangeAccent,
+                    color: Colors.orangeAccent.withOpacity(0.60),
+                    onPressed: (){})
+                ),
           ),
-        ],
+
+          ],
       ),
+
+
+
       body: Container(
-        margin: EdgeInsets.fromLTRB(4, 10, 4, 20),
-        padding: EdgeInsets.symmetric(),
+        margin: EdgeInsets.fromLTRB(4, 0, 4, 8),
+        padding: EdgeInsets.symmetric(horizontal:3,vertical:0),
         child: Column(
           children: <Widget>[
             SizedBox(width: 10,height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                Text("Customer Details :- ",
+                Text("Customer Details : ",
                 style: TextStyle(color: Colors.black87,
-                fontSize: 22,fontWeight: FontWeight.bold),),
+                fontSize: 22,fontWeight: FontWeight.w500),),
               ],
             ),
-            SizedBox(width: 20,height: 15),
+            SizedBox(width: 20,height: 10),
             //Divider(color: Colors.grey,height: 1,indent: 1,),
-            SizedBox(width: 20,height: 15),
+            SizedBox(width: 20,height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Name ",
                 style: TextStyle(color: Colors.black87,
-                fontSize: 19.5,fontWeight: FontWeight.bold),),
-                Text("Shivam sir",
-                  style: TextStyle(color: Colors.black87,
-                      fontSize: 18.5),),
-                InkWell(child: Icon(Icons.person,color:Colors.deepOrangeAccent))
+                fontSize: 19.5,fontWeight: FontWeight.w400),),
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text("Shivam sir",
+                  style: TextStyle(color: Colors.black.withOpacity(0.60),
+                      fontSize: 18.5),),
+                InkWell(child: Icon(Icons.person,color:Colors.orangeAccent))
+              ],
+
             ),
             SizedBox(width: 20,height: 15),
             Row(
@@ -66,15 +80,22 @@ class CustomerDetails extends StatelessWidget {
 
                 Text("Location ",
                 style: TextStyle(color: Colors.black87,
-                fontSize: 19.5,fontWeight: FontWeight.bold),),
-                Expanded(
-                  child:
-                Text(" ABES Engineering college , Campus 2 NH -24, Ghaziabad",
-                  style: TextStyle(color: Colors.black87,
-                      fontSize: 18.5),),
-                  ),
-                InkWell(child: Icon(Icons.location_on,color:Colors.deepOrangeAccent))
+                fontSize: 19.5,fontWeight: FontWeight.w400),),
+
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+             children: <Widget>[
+               Expanded(
+                 child:
+                 Text("ABES Engineering college , Campus 2 NH -24, Ghaziabad",
+                   style: TextStyle(color: Colors.black.withOpacity(0.60),
+                       fontSize: 18.5),),
+               ),
+               InkWell(child: Icon(Icons.location_on,color:Colors.orangeAccent))
+
+             ],
             ),
             SizedBox(width: 20,height: 15),
            // Divider(color: Colors.blueGrey,height: 1,indent: 1,),
@@ -83,11 +104,17 @@ class CustomerDetails extends StatelessWidget {
               children: <Widget>[
                 Text("Phone Number ",
                 style: TextStyle(color: Colors.black87,
-                fontSize: 19.5,fontWeight: FontWeight.bold),),
+                fontSize: 19.5,fontWeight: FontWeight.w400),),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
                 Text("9080477976",
-                  style: TextStyle(color: Colors.black87,
+                  style: TextStyle(color: Colors.black.withOpacity(0.60),
                       fontSize: 18.5),),
-                InkWell(child: Icon(Icons.phone,color:Colors.deepOrangeAccent))
+                InkWell(child: Icon(Icons.phone,color:Colors.orangeAccent))
+
               ],
             ),
             SizedBox(width: 20,height: 18),
@@ -97,11 +124,11 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Items", style: TextStyle(color: Colors.black87,
-                  fontSize: 19.5 ,fontWeight: FontWeight.bold),),
+                  fontSize: 19.5 ,fontWeight: FontWeight.w500),),
                 Text("", style: TextStyle(color: Colors.black87,
                     fontSize: 19.5 ,fontWeight: FontWeight.bold),),
                 Text("Rate", style: TextStyle(color: Colors.black87,
-                    fontSize: 19.5 ,fontWeight: FontWeight.bold),),
+                    fontSize: 19.5 ,fontWeight: FontWeight.w500),),
               ],
             ),
             SizedBox(width: 20,height: 15),
@@ -110,11 +137,11 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Milk   " ,style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text("  x 1 " ,style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text("Rs. 40" ,style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
               ],
             ),
             SizedBox(width: 20,height: 15),
@@ -122,11 +149,11 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Biscuits" , style: TextStyle(color: Colors.black87,
-                     fontSize: 20),),
+                     fontSize: 18),),
                 Text("x 1 " , style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text("Rs. 30" , style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
               ],
             ),
             SizedBox(width: 20,height: 15),
@@ -134,11 +161,11 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Maggi ", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text(" x 2 ", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text("Rs. 40", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
               ],
             ),
             SizedBox(width: 20,height: 15),
@@ -146,11 +173,11 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Colgate ", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text("x 1 ", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text(" Rs. 60", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
               ],
             ),
             SizedBox(width: 20,height: 15),
@@ -158,11 +185,11 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Olive Oil  ", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text("x 1 ", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
                 Text("Rs. 120", style: TextStyle(color: Colors.black87,
-                    fontSize: 20),),
+                    fontSize: 18),),
               ],
             ),
             SizedBox(width: 20,height: 20),
@@ -171,21 +198,23 @@ class CustomerDetails extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text("Total amount ", style: TextStyle(color: Colors.black87,
-                    fontSize: 21,fontWeight: FontWeight.bold),),
-                Text(" = Rs.290", style: TextStyle(color: Colors.black87,
-                    fontSize: 21,fontWeight: FontWeight.bold),),
+                Text("Total amount : ", style: TextStyle(color: Colors.black87,
+                    fontSize: 21,fontWeight: FontWeight.w400),),
+                Text("Rs.290", style: TextStyle(color: Colors.black87,
+                    fontSize: 21,fontWeight: FontWeight.w500),),
               ],
             ),
             SizedBox(width: 15,height: 20),
+            Divider(color: Colors.grey,height: 1),
+            SizedBox(width: 20,height: 15),
              // margin: EdgeInsets.symmetric(vertical: 8.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
-                    child: Text('Delivery and Payment request', style: TextStyle(color: Colors.white,
+                    child: Text('Delivered and Payment received', style: TextStyle(color: Colors.white,
                         fontSize: 22),),
-                    color: Colors.green,
+                    color: Colors.green.withOpacity(0.60),
                     onPressed: () {},
                   ),
                 ],
