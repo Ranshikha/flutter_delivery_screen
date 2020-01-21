@@ -10,11 +10,11 @@ class CustomerDetails extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(icon:Icon(Icons.arrow_back) ,
             onPressed:(){
-        Navigator.of(context).pop();
-        },
-        color: Colors.black87
+              Navigator.of(context).pop();
+            },
+            color: Colors.black87
         ),
-       title: Text("Order ID:1234568",
+        title: Text("Order ID:1234568",
           style: TextStyle(fontSize: 19,fontWeight: FontWeight.w500,color: Colors.black87),),
         backgroundColor: Colors.white,
         actions: <Widget>[
@@ -25,15 +25,15 @@ class CustomerDetails extends StatelessWidget {
                 height: 40,
                 child: RaisedButton(
 
-                  child: Text('SUPPORT',
+                    child: Text('SUPPORT',
                       style: TextStyle(color: Colors.white,fontSize: 14),),
-                   // color: Colors.orangeAccent,
-                    color: Colors.orangeAccent.withOpacity(0.60),
+                    // color: Colors.orangeAccent,
+                    color: Colors.orangeAccent.withOpacity(0.70),
                     onPressed: (){})
-                ),
+            ),
           ),
 
-          ],
+        ],
       ),
 
 
@@ -48,8 +48,8 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Text("Customer Details : ",
-                style: TextStyle(color: Colors.black87,
-                fontSize: 22,fontWeight: FontWeight.w500),),
+                  style: TextStyle(color: Colors.black87,
+                      fontSize: 22,fontWeight: FontWeight.w500),),
               ],
             ),
             SizedBox(width: 20,height: 10),
@@ -59,8 +59,8 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Name ",
-                style: TextStyle(color: Colors.black87,
-                fontSize: 19.5,fontWeight: FontWeight.w400),),
+                  style: TextStyle(color: Colors.black87,
+                      fontSize: 19.5,fontWeight: FontWeight.w400),),
               ],
             ),
             Row(
@@ -79,32 +79,32 @@ class CustomerDetails extends StatelessWidget {
               children: <Widget>[
 
                 Text("Location ",
-                style: TextStyle(color: Colors.black87,
-                fontSize: 19.5,fontWeight: FontWeight.w400),),
+                  style: TextStyle(color: Colors.black87,
+                      fontSize: 19.5,fontWeight: FontWeight.w400),),
 
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
-             children: <Widget>[
-               Expanded(
-                 child:
-                 Text("ABES Engineering college , Campus 2 NH -24, Ghaziabad",
-                   style: TextStyle(color: Colors.black.withOpacity(0.60),
-                       fontSize: 18.5),),
-               ),
-               InkWell(child: Icon(Icons.location_on,color:Colors.orangeAccent))
+              children: <Widget>[
+                Expanded(
+                  child:
+                  Text("ABES Engineering college , Campus 2 NH -24, Ghaziabad",
+                    style: TextStyle(color: Colors.black.withOpacity(0.60),
+                        fontSize: 18.5),),
+                ),
+                InkWell(child: Icon(Icons.location_on,color:Colors.orangeAccent))
 
-             ],
+              ],
             ),
             SizedBox(width: 20,height: 15),
-           // Divider(color: Colors.blueGrey,height: 1,indent: 1,),
+            // Divider(color: Colors.blueGrey,height: 1,indent: 1,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Phone Number ",
-                style: TextStyle(color: Colors.black87,
-                fontSize: 19.5,fontWeight: FontWeight.w400),),
+                  style: TextStyle(color: Colors.black87,
+                      fontSize: 19.5,fontWeight: FontWeight.w400),),
               ],
             ),
             Row(
@@ -124,7 +124,7 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Items", style: TextStyle(color: Colors.black87,
-                  fontSize: 19.5 ,fontWeight: FontWeight.w500),),
+                    fontSize: 19.5 ,fontWeight: FontWeight.w500),),
                 Text("", style: TextStyle(color: Colors.black87,
                     fontSize: 19.5 ,fontWeight: FontWeight.bold),),
                 Text("Rate", style: TextStyle(color: Colors.black87,
@@ -149,7 +149,7 @@ class CustomerDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text("Biscuits" , style: TextStyle(color: Colors.black87,
-                     fontSize: 18),),
+                    fontSize: 18),),
                 Text("x 1 " , style: TextStyle(color: Colors.black87,
                     fontSize: 18),),
                 Text("Rs. 30" , style: TextStyle(color: Colors.black87,
@@ -207,21 +207,21 @@ class CustomerDetails extends StatelessWidget {
             SizedBox(width: 15,height: 20),
             Divider(color: Colors.grey,height: 1),
             SizedBox(width: 20,height: 15),
-             // margin: EdgeInsets.symmetric(vertical: 8.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  RaisedButton(
-                    child: Text('Delivered and Payment received', style: TextStyle(color: Colors.white,
-                        fontSize: 22),),
-                    color: Colors.green.withOpacity(0.60),
-                    onPressed: () {},
-                  ),
-                ],
+            // margin: EdgeInsets.symmetric(vertical: 8.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                RaisedButton(
+                  child: Text('Delivered and Payment received', style: TextStyle(color: Colors.white,
+                      fontSize: 22),),
+                  color: Colors.green.withOpacity(0.60),
+                  onPressed: () {},
+                ),
+              ],
             ),
             SizedBox(width: 15,height: 15),
-            ],
-            ),
+          ],
+        ),
       ),
     );
 
